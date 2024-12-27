@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "patternDescription": "SQL Injection",
+        "patternString": ".*(select|drop|update|union|insert|alter|declare|cast)( |\\().*",
+        "module": "sqli",
+        "severity": "high",
+        "action": "block"
+    },
+    {
+        "id": 2,
+        "patternDescription": "XSS",
+        "patternString": ".*(alert|<script>|onerror|onload|javascript:|eval\\().*",
+        "module": "xss",
+        "severity": "high",
+        "action": "block"
+    },
+    {
+        "id": 3,
+        "patternDescription": "File Inclusion",
+        "patternString": ".*(\\.\\./|/etc/passwd|/etc/shadow|php://|file://).*",
+        "module": "lfi",
+        "severity": "critical",
+        "action": "block"
+    },
+    {
+        "id": 4,
+        "patternDescription": "Command Injection",
+        "patternString": ".*(;|&&|\\|\\||`|\\$\\(|\\${).*",
+        "module": "cmd_injection",
+        "severity": "critical",
+        "action": "block"
+    },
+    {
+        "id": 5,
+        "patternDescription": "CSRF",
+        "patternString": ".*csrf.*",
+        "module": "csrf",
+        "severity": "medium",
+        "action": "log"
+    },
+    {
+        "id": 6,
+        "patternDescription": "Directory Traversal",
+        "patternString": ".*(\\.\\./|\\\\.*\\\\windows\\\\|boot\\.ini).*",
+        "module": "directory_traversal",
+        "severity": "high",
+        "action": "block"
+    }
+]

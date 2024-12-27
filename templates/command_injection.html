@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Injection Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Command Injection Test</h1>
+        <p class="text-muted text-center">Simulate a command injection attack by entering a malicious command.</p>
+        <form method="POST" action="/command_injection" class="mt-4">
+            <div class="mb-3">
+                <label for="cmd" class="form-label">Enter a Command:</label>
+                <input type="text" class="form-control" id="cmd" name="cmd" placeholder="e.g., ls; rm -rf /">
+            </div>
+            <button type="submit" class="btn btn-danger">Execute</button>
+        </form>
+    </div>
+</body>
+</html>

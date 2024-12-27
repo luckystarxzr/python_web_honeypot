@@ -1,0 +1,277 @@
+2024-12-26 20:46:40 - WARNING -  * Debugger is active!
+2024-12-26 20:46:40 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:46:46 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\testing\\test_logs.py', reloading
+2024-12-26 20:46:46 - WARNING -  * Debugger is active!
+2024-12-26 20:46:46 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:56:03 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\testing\\test_logs.py', reloading
+2024-12-26 20:56:04 - WARNING -  * Debugger is active!
+2024-12-26 20:56:04 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:58:09 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\testing\\test_logs.py', reloading
+2024-12-26 20:58:10 - WARNING -  * Debugger is active!
+2024-12-26 20:58:10 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:59:15 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\testing\\test_logs.py', reloading
+2024-12-26 20:59:16 - WARNING -  * Debugger is active!
+2024-12-26 20:59:16 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:59:27 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 20:59:27 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 20:59:27 - INFO -  * Restarting with stat
+2024-12-26 20:59:28 - WARNING -  * Debugger is active!
+2024-12-26 20:59:28 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 20:59:54 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\app.py', reloading
+2024-12-26 20:59:54 - INFO -  * Restarting with stat
+2024-12-26 20:59:55 - WARNING -  * Debugger is active!
+2024-12-26 20:59:55 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 21:00:18 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:18] "GET / HTTP/1.1" 200 -
+2024-12-26 21:00:18 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-26 21:00:19 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:19] "[33mGET /logs.html HTTP/1.1[0m" 404 -
+2024-12-26 21:00:22 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:22] "[33mGET /file_inclusion.html HTTP/1.1[0m" 404 -
+2024-12-26 21:00:30 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:30] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:00:42 - INFO - 127.0.0.1 - - [26/Dec/2024 21:00:42] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:01:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:01:04 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:01:04 - INFO -  * Restarting with stat
+2024-12-26 21:01:04 - WARNING -  * Debugger is active!
+2024-12-26 21:01:04 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 21:01:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:01:10 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:01:10 - INFO -  * Restarting with stat
+2024-12-26 21:01:10 - WARNING -  * Debugger is active!
+2024-12-26 21:01:10 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 21:13:31 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\app.py', reloading
+2024-12-26 21:13:31 - INFO -  * Restarting with stat
+2024-12-26 21:13:31 - WARNING -  * Debugger is active!
+2024-12-26 21:13:31 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 21:13:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:13:52 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:13:52 - INFO -  * Restarting with stat
+2024-12-26 21:13:53 - WARNING -  * Debugger is active!
+2024-12-26 21:13:53 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 21:14:05 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:05] "GET / HTTP/1.1" 200 -
+2024-12-26 21:14:05 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-26 21:14:10 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:10] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:14:12 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:12] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:14:12 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:12] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:14:32 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:32] "[33mGET /logs.html HTTP/1.1[0m" 404 -
+2024-12-26 21:14:34 - INFO - 127.0.0.1 - - [26/Dec/2024 21:14:34] "[33mGET /vulnerable.html HTTP/1.1[0m" 404 -
+2024-12-26 21:15:06 - INFO - 127.0.0.1 - - [26/Dec/2024 21:15:06] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:15:17 - INFO - 127.0.0.1 - - [26/Dec/2024 21:15:17] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:16:53 - INFO - 127.0.0.1 - - [26/Dec/2024 21:16:53] "GET / HTTP/1.1" 200 -
+2024-12-26 21:16:56 - INFO - 127.0.0.1 - - [26/Dec/2024 21:16:56] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 21:25:56 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:25:56 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:45:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:45:20 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:46:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:46:20 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:46:24 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:46:24 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 21:46:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 21:46:26 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 22:48:46 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 22:48:46 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 22:48:46 - INFO -  * Restarting with stat
+2024-12-26 22:48:46 - WARNING -  * Debugger is active!
+2024-12-26 22:48:46 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 22:49:05 - INFO - 127.0.0.1 - - [26/Dec/2024 22:49:05] "GET / HTTP/1.1" 200 -
+2024-12-26 22:49:05 - INFO - 127.0.0.1 - - [26/Dec/2024 22:49:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-26 22:49:06 - INFO - 127.0.0.1 - - [26/Dec/2024 22:49:06] "[33mGET /command_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 22:53:23 - INFO -  * Detected change in 'C:\\Users\\lucky\\Desktop\\web_honeypot\\sandbox\\functions.py', reloading
+2024-12-26 22:53:23 - INFO -  * Restarting with stat
+2024-12-26 22:53:24 - WARNING -  * Debugger is active!
+2024-12-26 22:53:24 - INFO -  * Debugger PIN: 150-554-976
+2024-12-26 22:56:37 - INFO - 127.0.0.1 - - [26/Dec/2024 22:56:37] "GET / HTTP/1.1" 200 -
+2024-12-26 23:00:39 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 23:00:39 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 23:15:08 - WARNING -  * Debugger is active!
+2024-12-26 23:15:08 - INFO -  * Debugger PIN: 152-562-555
+2024-12-26 23:23:05 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:05] "[33mGET /sql_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 23:23:06 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:06] "[33mGET /sql_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 23:23:06 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:06] "[33mGET /sql_injection.html HTTP/1.1[0m" 404 -
+2024-12-26 23:23:09 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:09] "GET / HTTP/1.1" 200 -
+2024-12-26 23:23:09 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:09] "GET / HTTP/1.1" 200 -
+2024-12-26 23:23:10 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:10] "GET /command_injection HTTP/1.1" 200 -
+2024-12-26 23:23:13 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:13] "GET /xss HTTP/1.1" 200 -
+2024-12-26 23:23:15 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:15] "GET /file_inclusion HTTP/1.1" 200 -
+2024-12-26 23:23:17 - INFO - 127.0.0.1 - - [26/Dec/2024 23:23:17] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:24:42 - INFO -  * Detected change in 'e:\\FlaskProject\\app.py', reloading
+2024-12-26 23:24:42 - WARNING -  * Debugger is active!
+2024-12-26 23:24:42 - INFO -  * Debugger PIN: 152-562-555
+2024-12-26 23:25:00 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:00] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:00 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:00] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:01 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:01] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:01 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:01] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:08 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:08] "GET / HTTP/1.1" 200 -
+2024-12-26 23:25:09 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:09] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:10 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:10] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:10 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:10] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:25:11 - INFO - 127.0.0.1 - - [26/Dec/2024 23:25:11] "GET /logs HTTP/1.1" 200 -
+2024-12-26 23:29:44 - INFO -  * Detected change in 'e:\\FlaskProject\\modules\\logs.py', reloading
+2024-12-26 23:29:45 - WARNING -  * Debugger is active!
+2024-12-26 23:29:45 - INFO -  * Debugger PIN: 152-562-555
+2024-12-26 23:31:03 - INFO -  * Detected change in 'e:\\FlaskProject\\testing\\test_command_injection.py', reloading
+2024-12-26 23:31:03 - WARNING -  * Debugger is active!
+2024-12-26 23:31:03 - INFO -  * Debugger PIN: 152-562-555
+2024-12-27 10:39:00 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 10:39:00 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 10:39:23 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 10:39:23 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 10:39:35 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:35] "GET /logs HTTP/1.1" 200 -
+2024-12-27 10:39:36 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:36] "GET /logs HTTP/1.1" 200 -
+2024-12-27 10:39:36 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:36] "GET /logs HTTP/1.1" 200 -
+2024-12-27 10:39:37 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:37] "GET /logs HTTP/1.1" 200 -
+2024-12-27 10:39:40 - INFO - 127.0.0.1 - - [27/Dec/2024 10:39:40] "GET /xss HTTP/1.1" 200 -
+2024-12-27 10:42:03 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 10:42:03 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 10:42:27 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 10:42:27 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 11:25:40 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 11:25:40 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 11:25:51 - INFO - 127.0.0.1 - - [27/Dec/2024 11:25:51] "GET / HTTP/1.1" 200 -
+2024-12-27 11:25:52 - INFO - 127.0.0.1 - - [27/Dec/2024 11:25:52] "GET / HTTP/1.1" 200 -
+2024-12-27 11:25:52 - INFO - 127.0.0.1 - - [27/Dec/2024 11:25:52] "GET / HTTP/1.1" 200 -
+2024-12-27 11:25:56 - ERROR - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\FlaskProject\app.py", line 64, in show_logs
+    return render_template("logs.html", logs=logs)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\FlaskProject\templates\logs.html", line 101, in top-level template code
+    {% if page > 1 %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'page' is undefined
+2024-12-27 11:25:56 - INFO - 127.0.0.1 - - [27/Dec/2024 11:25:56] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-12-27 11:25:58 - INFO - 127.0.0.1 - - [27/Dec/2024 11:25:58] "GET /command_injection HTTP/1.1" 200 -
+2024-12-27 11:26:00 - INFO - 127.0.0.1 - - [27/Dec/2024 11:26:00] "GET /file_inclusion HTTP/1.1" 200 -
+2024-12-27 11:26:02 - ERROR - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\FlaskProject\app.py", line 64, in show_logs
+    return render_template("logs.html", logs=logs)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\FlaskProject\templates\logs.html", line 101, in top-level template code
+    {% if page > 1 %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'page' is undefined
+2024-12-27 11:26:02 - INFO - 127.0.0.1 - - [27/Dec/2024 11:26:02] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-12-27 11:27:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 11:27:52 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 11:28:22 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 11:28:22 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 11:28:24 - ERROR - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\FlaskProject\app.py", line 64, in show_logs
+    return render_template("logs.html", logs=logs)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\FlaskProject\templates\logs.html", line 101, in top-level template code
+    {% if page > 1 %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'page' is undefined
+2024-12-27 11:28:24 - INFO - 127.0.0.1 - - [27/Dec/2024 11:28:24] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-12-27 11:28:25 - ERROR - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\FlaskProject\app.py", line 64, in show_logs
+    return render_template("logs.html", logs=logs)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\FlaskProject\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\FlaskProject\templates\logs.html", line 101, in top-level template code
+    {% if page > 1 %}
+    ^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'page' is undefined
+2024-12-27 11:28:25 - INFO - 127.0.0.1 - - [27/Dec/2024 11:28:25] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-12-27 11:28:34 - INFO - 127.0.0.1 - - [27/Dec/2024 11:28:34] "GET / HTTP/1.1" 200 -
+2024-12-27 11:28:54 - INFO - 127.0.0.1 - - [27/Dec/2024 11:28:54] "GET /command_injection HTTP/1.1" 200 -
+2024-12-27 11:28:59 - INFO - 127.0.0.1 - - [27/Dec/2024 11:28:59] "POST /command_injection HTTP/1.1" 200 -
+2024-12-27 11:29:15 - INFO - 127.0.0.1 - - [27/Dec/2024 11:29:15] "GET /command_injection HTTP/1.1" 200 -
+2024-12-27 11:29:19 - INFO - 127.0.0.1 - - [27/Dec/2024 11:29:19] "POST /command_injection HTTP/1.1" 200 -
+2024-12-27 11:29:21 - INFO - 127.0.0.1 - - [27/Dec/2024 11:29:21] "GET /command_injection HTTP/1.1" 200 -
+2024-12-27 11:29:28 - INFO - 127.0.0.1 - - [27/Dec/2024 11:29:28] "POST /command_injection HTTP/1.1" 200 -
+2024-12-27 11:29:31 - INFO - 127.0.0.1 - - [27/Dec/2024 11:29:31] "GET /command_injection HTTP/1.1" 200 -
+2024-12-27 11:36:56 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 11:36:56 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 11:58:55 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 11:58:55 - INFO - [33mPress CTRL+C to quit[0m

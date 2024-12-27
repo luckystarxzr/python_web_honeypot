@@ -1,0 +1,4 @@
+2024-12-27 11:36:48 - INFO - Attack type: CSRF, IP: Unknown IP, User-Agent: Unknown User-Agent, Details: Possible CSRF attack detected
+2024-12-27 11:36:48 - ERROR - Database error: 1146 (42S02): Table 'honeypot_db.attacks' doesn't exist
+2024-12-27 11:36:48 - INFO - Attack type: CSRF, IP: Unknown IP, User-Agent: Unknown User-Agent, Details: Possible CSRF attack detected
+2024-12-27 11:36:48 - ERROR - Database error: 1146 (42S02): Table 'honeypot_db.attacks' doesn't exist

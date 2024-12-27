@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Honeypot</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #ffffff;
+            background: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #0056b3;
+        }
+
+
+        .logs-link {
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 1em;
+            color: #ffffff;
+            background: #28a745;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .logs-link:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Honeypot Testing Page</h1>
+        <p>Choose a vulnerability test to simulate potential attacks:</p>
+        <ul>
+            <li><a href="/command_injection">Test Command Injection</a></li>
+            <li><a href="/sql_injection">Test SQL Injection</a></li>
+            <li><a href="/xss">Test XSS</a></li>
+            <li><a href="/csrf">Test CSRF</a></li>
+            <li><a href="/directory_traversal">Test Directory Traversal</a></li>
+            <li><a href="/file_inclusion">Test File Inclusion</a></li>
+        </ul>
+        <br><br>
+        <a class="logs-link" href="/logs">View Attack Logs</a>
+    </div>
+</body>
+</html>
