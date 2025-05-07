@@ -1,22 +1,22 @@
-基于Python的web_honeypot系统，带有测试代码，还能继续完善
 Web 安全检测与蜜罐系统
 项目概述
-Web 安全检测与蜜罐系统是一个基于 Flask 的 Web 应用程序，旨在模拟和检测常见的 Web 安全威胁，包括命令注入、CSRF、目录遍历、文件包含、SQL 注入和 XSS 攻击。该系统通过规则匹配和日志记录，识别潜在的恶意行为，并将攻击信息存储到日志文件和 MySQL 数据库中，供后续分析。系统还提供了一个交互式 Web 界面，允许用户测试攻击场景并查看攻击日志。
+Web 安全检测与蜜罐系统是一个基于 Flask 的 Web 应用程序，旨在模拟和检测常见的 Web 安全威胁，包括命令注入、跨站请求伪造（CSRF）、目录遍历、文件包含、SQL 注入和跨站脚本（XSS）攻击。该系统通过规则匹配、正则表达式和虚拟环境，识别潜在的恶意行为，并将攻击信息记录到日志文件和 MySQL 数据库中，供后续分析。系统提供交互式 Web 界面，允许用户测试攻击场景、查看检测结果和浏览攻击日志。
 功能特性
 
 攻击模拟与检测：
 支持检测命令注入、CSRF、目录遍历、文件包含、SQL 注入和 XSS 攻击。
-使用规则匹配和正则表达式识别恶意输入。
+使用正则表达式和规则匹配（rules.json）识别恶意输入。
+虚拟环境（VirtualEnvironment）模拟文件系统和命令执行，防止真实系统受损。
 
 
 日志记录：
-将攻击信息记录到日志文件（logs/attacks.log）和 MySQL 数据库。
-包含攻击类型、IP 地址、用户代理、时间戳等详细信息。
+攻击信息记录到日志文件（logs/attacks.log）和 MySQL 数据库。
+包含时间戳、IP 地址、用户代理、攻击类型和详细描述。
 
 
 数据库支持：
-使用 MySQL 存储攻击日志和请求日志，便于查询和分析。
-自动初始化数据库表结构。
+使用 MySQL 存储攻击日志和请求日志，支持查询和分析。
+自动初始化数据库表（attacks 和 logs）。
 
 
 日志监控：
@@ -24,8 +24,13 @@ Web 安全检测与蜜罐系统是一个基于 Flask 的 Web 应用程序，旨�
 
 
 Web 界面：
-提供交互式页面，允许用户输入测试数据并查看检测结果。
-显示分页的攻击日志，支持浏览历史记录。
+提供交互式页面（templates/），支持测试攻击场景和查看结果。
+日志页面（/logs）支持分页浏览历史攻击记录。
+
+
+虚拟环境：
+模拟文件系统（/etc/passwd 等）和命令（ls、whoami），生成伪装内容。
+防止非法访问敏感文件或执行危险命令。
 
 
 错误处理：
@@ -33,7 +38,8 @@ Web 界面：
 
 
 配置管理：
-通过 config.py 支持开发和生产环境的配置切换。
+通过 config.py 支持开发和生产环境配置。
+动态加载规则（rules.json）和命令映射（functions.json）。
 
 
 
@@ -44,6 +50,8 @@ Python 3.6+
 Flask：Web 框架
 MySQL Connector：数据库连接
 Logging：日志记录
+Regular Expressions (re)：恶意模式检测
+Threading：异步日志监控
 
 
 前端：
@@ -55,9 +63,13 @@ Jinja2：模板引擎
 MySQL：存储攻击和请求日志
 
 
+数据文件：
+JSON：规则（rules.json）和命令映射（functions.json）
+
+
 其他：
-Regular Expressions (re)：用于检测恶意模式
-Threading：异步日志监控
+urllib.parse：URL 解码
+os：路径规范化
 
 
 
@@ -111,7 +123,13 @@ mysql-connector-python==8.0.27
 set SECRET_KEY="your-secret-key"     # Windows
 
 
-或在 config.py 中直接修改 SECRET_KEY。
+或在 config.py 中修改 SECRET_KEY。
+
+
+创建数据目录：
+
+创建 data/ 目录并确保 rules.json 存在。
+可选：创建 functions.json 或使用默认命令映射。
 
 
 初始化数据库：
@@ -136,9 +154,13 @@ python app.py
 
 
 测试攻击场景：
-导航到各攻击页面（例如 /command_injection、/xss）。
-输入测试数据（例如命令 ls; rm -rf / 或 XSS 脚本 <script>alert('xss')</script>）。
-查看检测结果（JSON 响应或页面提示）。
+导航到攻击页面，例如：
+/command_injection：输入命令如 ls 或 rm -rf /。
+/xss：输入脚本如 <script>alert('xss')</script>。
+/sql_injection：输入查询如 1' OR '1'='1。
+
+
+查看 JSON 响应，确认是否检测到攻击。
 
 
 查看日志：
@@ -146,8 +168,14 @@ python app.py
 
 
 监控攻击：
-后台日志监控自动将新攻击记录同步到数据库。
+后台日志监控（database.py）自动将新攻击记录同步到数据库。
 检查 logs/attacks.log 或查询数据库表 attacks。
+
+
+通用检测接口：
+使用 /detect 端点发送 JSON 数据：curl -X POST http://localhost:5000/detect -H "Content-Type: application/json" -d '{"xss": "<script>alert(1)</script>"}'
+
+
 
 
 
@@ -163,6 +191,16 @@ web-security-honeypot/
 ├── file_inclusion.py        # 文件包含检测
 ├── sql_injection.py         # SQL 注入检测
 ├── xss.py                   # XSS 检测
+├── sandbox/
+│   ├── generate.py          # 虚拟环境和伪装内容生成
+│   ├── functions.py         # 攻击检测和规则应用
+│   ├── replacement/
+│       ├── getenv.py        # 环境变量访问模拟
+│       ├── ini_get.py       # 配置文件访问模拟
+│       ├── system.py        # 系统命令执行模拟
+├── data/
+│   ├── rules.json           # 攻击检测规则
+│   ├── functions.json       # 命令映射（可选）
 ├── templates/               # HTML 模板
 │   ├── index.html
 │   ├── command_injection.html
@@ -180,52 +218,46 @@ web-security-honeypot/
 注意事项
 
 数据库安全：
-确保 DB_CONFIG 中的 MySQL 凭证安全，避免硬编码敏感信息。
-生产环境中建议使用更强的密码和限制数据库访问。
+确保 DB_CONFIG 中的 MySQL 凭证安全，避免硬编码敏感信息（如当前 root:123456）。
+生产环境中使用强密码并限制数据库访问。
 
 
 日志管理：
-日志文件 logs/attacks.log 会持续增长，建议定期清理或使用日志轮转。
+日志文件 logs/attacks.log 会持续增长，建议配置日志轮转。
 
 
-攻击检测：
-当前规则基于简单模式匹配，可能无法检测复杂攻击。
-可扩展 rules 或添加机器学习模型以提高检测准确性。
+规则扩展：
+编辑 rules.json 添加新规则，支持更复杂的攻击模式。
+当前规则基于正则表达式，可能需优化以减少误报。
+
+
+虚拟环境：
+VirtualEnvironment 仅模拟有限文件和命令，需扩展以支持更多场景。
 
 
 生产部署：
-禁用 debug=True（在 app.py 中）。
-使用 WSGI 服务器（如 Gunicorn）部署 Flask 应用。
+禁用 app.run(debug=True)，使用 Gunicorn 等 WSGI 服务器。
+配置 HTTPS 和防火墙，防止真实攻击。
 
 
 安全测试：
-测试环境应隔离，避免真实系统受到测试攻击的影响。
+测试环境应隔离，避免影响真实系统。
 
 
 
 常见问题
 
 Q：数据库连接失败？
-A：检查 MySQL 服务是否运行，确认 DB_CONFIG 中的主机、用户和密码正确。
+A：检查 MySQL 服务状态，确认 DB_CONFIG 中的主机、用户和密码。
 
 
-Q：日志文件为空？
-A：确保 logs/ 目录有写权限，检查是否有攻击触发日志记录。
+Q：规则未生效？
+A：确保 rules.json 存在且格式正确，或检查正则表达式是否匹配输入。
 
 
-Q：检测结果不准确？
-A：当前规则可能不完整，可在 rules 文件中添加更多模式或改进正则表达式。
+Q：日志为空？
+A：确认 logs/ 目录有写权限，触发攻击以生成日志。
 
 
-
-贡献
-欢迎提交 Issue 或 Pull Request！请遵循以下步骤：
-
-Fork 项目。
-创建特性分支（git checkout -b feature/xxx）。
-提交更改（git commit -m "Add xxx"）。
-推送分支（git push origin feature/xxx）。
-创建 Pull Request。
-
-许可证
-本项目采用 MIT 许可证。详情见 LICENSE 文件。
+Q：检测误报或漏报？
+A：优化 rules.json 中的正则表达式，或添加机器学习模型提升准确性。
